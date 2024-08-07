@@ -8,16 +8,16 @@
 <body>
     <form action="" method="post">
 <p> Digite seu nome:</p>
-<input type="text" name="nome" placeholder="nome completo">
+<input type="text" name="nome" placeholder="nome completo" required>
 <P> Digite seu email:</P>
-<input type="email" name="email" placeholder="email" value="@gmail.com">   
+<input type="email" name="email" placeholder="email" value="@gmail.com" required>   
 <p> Coloque seu número:</p>
-<input type="number" name="telefone">
+<input type="number" name="telefone" required>
 <p> Você trabalha?</p>
-<input type="radio" name="trabalho" value="sim"> com certeza
-<input type="radio" name="trabalho" value="não"> sem certeza <br>    
+<input type="radio" name="trabalho" value="sim" readonly> com certeza 
+<input type="radio" name="trabalho" value="não" required> sem certeza <br>    
 <p>Onde você mora?</p>
-<select name="estado" id="">
+<select name="estado" id="" required>
 <option value="1">Paraná</option>
 <option value="2">São Paulo</option>
 <option value="3">Rio de Janeiro</option>
@@ -32,7 +32,7 @@
 
 
 
-<input type="checkbox" name="novidades" id="" checked> aceito receber novidades da loja
+<input type="checkbox" name="novidades" id="" checked required> aceito receber novidades da loja <br>
 <button type="submit"> enviar </button>
 <button type="reset">Apagar o formulário</button>
 
